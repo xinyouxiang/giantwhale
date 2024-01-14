@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url("../assets/fonts/coolvetica.otf") format("opentype");
+}
+
+html, body {
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgba(69, 69, 69, 1);
+    font-size: 20px;
+    overflow-x :hidden;
+    font-weight: 500;
+    scroll-behavior: smooth;
+}
+.cx-v{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.navbar-light .navbar-toggler{
+    border: none !important;
+}
+.navbar-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 66;
+    width: 100%;
+}
+.bg-light{
+    background: white !important;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-weight: bold;
+    color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #0514b5;
+}
+.home{
+    max-height: calc(100vh - 50px);
+    overflow: hidden;
+}
+.title{
+    font-family: Coolvetica;
+    font-size: 67px;
+    color: #0514b5;
+}
+.home .h-text{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 22%;
+}
+.home video{
+    width: 100%;
+}
+.home .h-text img{
+    display: block;
+    margin: auto;
+    height: 120px;
+}
+.home .h-text .h-p{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    color: white;
+    max-width: 600px;
+    display: block;
+    padding: 20px;
+}
+.section-padding{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.tokonomics .gr-sec{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(248, 248, 248, 1);
+}
+.tokonomics .gr-sec h5{
+    color: rgba(5, 20, 181, 1);
+    font-size: 30px;
+}
+.tokonomics .gr-sec h5 span{
+    font-weight: bold;
+}
+p span{
+    font-weight: bold;
+}
+.footer{
+    background: black;
+    color: white;
+}
+.footer .title{
+    color: white !important;
+}
+.footer img{
+    height: 60px;
+}
+.footer .fcx{
+    gap: 5px;
+}
+.footer .line{
+    border-top: 1px solid rgb(78, 76, 76);
+    width: 100%;
+    align-self: center;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.footer a{
+    align-self: center;
+}
+.footer .social-ico{
+
+    height: 50px;
+}
+@media (max-width: 1000px) {
+    .home .h-text{
+        margin-top: 16rem;
+    }
+    .home .h-text img{
+        height: 40px;
+    }
+    .home video{
+        height: calc(100vh - 50px);
+        width: auto;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .tokonomics img{
+        width: 100%;
+        height: auto;
+    }
+    .tokonomics .gr-sec{
+        background: white;
+        height: 300px;
+    }
+    .footer .line{
+        margin: auto;
+    }
+}
